@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 3050;
 const perPage = process.env.PAGE_SIZE || 10;
 
-const mongoUrl = process.env.MONGODB_URI || "mongodb://sajalj4598:epZn3woSYlGKraf9FKoOhFSY9UvBR1ZSHEgiPdxwkrevD6htQg4Jrt3RCpdQRWB43ocj0EcBX6j91y9uiteLIw==@sajalj4598.documents.azure.com:10255/?ssl=true";
+const mongoUrl = process.env.MONGODB_URI || "mongodb://sajalj4598:epZn3woSYlGKraf9FKoOhFSY9UvBR1ZSHEgiPdxwkrevD6htQg4Jrt3RCpdQRWB43ocj0EcBX6j91y9uiteLIw==@sajalj4598.documents.azure.com:10255/?ssl=true&replicaSet=globaldb";
 const defaultPassword = process.env.HACKERLOG_PASSWORD || 'paa';
 
 // Create post schema
