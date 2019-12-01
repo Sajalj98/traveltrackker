@@ -55,7 +55,7 @@ app.post('/update', (req, res) => {
     const userUpdate = new Update({ name, update,source ,destination ,date });
     userUpdate.save().then(() => {
       // do a redirect here 
-      res.redirect("/")
+      res.redirect("/");
     }).catch(() => {
       // do a redirect here
       res.redirect("/error");
