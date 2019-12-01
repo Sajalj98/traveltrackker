@@ -12,8 +12,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Get env variables
-const port = 3050;
+const port = process.env.PORT || 3050;
 const perPage = process.env.PAGE_SIZE || 10;
+
 const mongoUrl = process.env.MONGODB_URI || "mongodb://sajalj4598:epZn3woSYlGKraf9FKoOhFSY9UvBR1ZSHEgiPdxwkrevD6htQg4Jrt3RCpdQRWB43ocj0EcBX6j91y9uiteLIw==@sajalj4598.documents.azure.com:10255/?ssl=true";
 const defaultPassword = process.env.HACKERLOG_PASSWORD || 'paa';
 
